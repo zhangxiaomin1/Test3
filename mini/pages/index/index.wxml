@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<!--1.头像-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<!--2.灰色分隔块-->
+<view class="divider"> </view>
+<!--3.个人资料-->
+<view class="cell"> 
+    <navigator class="cell-item">
+      <text>个人资料</text>
+    </navigator>
+    <navigator class="cell-item">
+      <text>我的优惠券</text>
+    </navigator>
+</view>
+<!--4.常见问题-->
+<view class="divider"> </view>
+<view class="cell"> 
+  <navigator class="cell-item arrow-1"><text>常见问题</text></navigator>
+  <navigator class="cell-item arrow-1"><text>使用条款</text></navigator>
+  <navigator class="cell-item arrow-1"><text>新手入门</text></navigator>
+  <navigator class="cell-item arrow-1"><text>积分策略</text></navigator>
+</view>
+<!--5.设置-->
+<view class="divider"> </view>
+<view class="cell"> 
+  <navigator  class="cell-item arrow-1"><text>设置</text></navigator>
+</view>

@@ -1,0 +1,109 @@
+/* pages/detail/detail.wxss */
+/*题目*/
+.title-style{
+  display: block;
+  height:60rpx;
+  width:100%;
+  background-color:#F4EA2A;
+  text-align: center;
+  border-top:1px solid #ccc;
+}
+.title-style text{
+  font-size: 16px;
+}
+.slider{
+  display: flex;
+}
+.slider image{
+  width:100%;
+  height:400rpx;
+}
+/*选项卡*/
+.swiper-tab{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 60rpx;
+  margin-top:20rpx;
+  }
+  .swiper-tab-item{
+  display: inline-block;
+  width: 50%;
+  color:#888888;
+  font-size:15px;
+  }
+  .active{
+  color:#FF7000;
+  border-bottom: 4rpx solid #FF7000;
+  }
+  swiper{
+    height:2800rpx;
+  }
+/*简介*/
+.jianjie{
+  display: flex;
+  flex-direction: column; 
+}
+.jianjie .text-1{
+  font-size:18px;
+  margin-top:10rpx; 
+}
+.jianjie .text-2{
+  font-size:15px;
+  margin-top:10rpx;
+}
+.jianjie .renqi{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:10rpx;
+}
+.jianjie .renqi text{
+  display: block;
+  width:30%;
+  font-size: 14px;
+}
+/*选集*/
+.xuanji{
+  display: flex;
+  flex-direction: row;
+  height:200rpx;
+  margin-top:10rpx;
+}
+.xuanji .tupian{
+  width:45%;
+  display: block;
+
+}
+.xuanji .tupian image{
+  width:350rpx;
+  height:200rpx;
+}
+.timu{
+  display: flex;
+  width:55%;
+  flex-direction: column;
+  margin-left:30rpx;
+  margin-top:20rpx;
+}
+.timu text{
+  font-size:15px;
+}
+.top-1{
+  margin-top:20rpx;
+}
+.zan{
+  display: flex;
+  flex-direction: row;
+  margin-top:20rpx;
+}
+.zan image{
+  width:35rpx;
+  height:35rpx;
+  margin-top:3rpx;
+}
+.zan text{
+  margin-left:20rpx;
+}

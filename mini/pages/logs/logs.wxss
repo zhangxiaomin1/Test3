@@ -1,0 +1,77 @@
+.slider,.slider image,.slider swiper{
+  width:100%;
+  height:470rpx; /*图片测量结果*/
+}
+/*2.导航*/
+.index-nav{
+  display: flex;  /*设置弹性布局*/
+  margin-top:20rpx;
+}
+.index-nav .nav-item{
+  height:130rpx;
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  box-sizing: border-box;
+}
+.index-nav image{
+  width:70rpx;
+  height:70rpx;
+}
+.index-nav text{
+  font-size:15px;
+  margin-top:10rpx;
+}
+/*2.推荐*/
+.tuijain{
+  display: flex;
+  justify-content: center;
+  margin-top:15rpx;}
+.tuijain text{
+  font-size:16px;
+}
+
+.tui-1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:15rpx;
+}
+.tui-1 .tui-item{
+  height:200px;
+  width:49.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  box-sizing: border-box;
+  margin-left:3rpx;
+}
+.tui-item image{
+  height:280rpx;
+  width:100%;
+}
+.text-1{
+  font-size:14px;
+  overflow: hidden;
+}
+.text-2{
+  font-size:13px;
+}
+/*强势黑马*/
+.tui-1 .hei-item{
+  height:160px;
+  width:32.7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+.hei-item image{
+  height:200rpx;
+  width:100%;
+}
+.left{
+  margin-left:5rpx;
+}

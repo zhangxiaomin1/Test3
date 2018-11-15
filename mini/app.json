@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/logs/logs", 
+    "pages/detail/detail",  
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F4EA2A",
+    "navigationBarTitleText": "快看漫画",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "发现",
+        "iconPath": "assets/tabs/faxian.png",
+        "selectedIconPath": "assets/tabs/faxian-2.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "分类",
+        "iconPath": "assets/tabs/fenlei .png",
+        "selectedIconPath": "assets/tabs/fenleiwei-2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "assets/tabs/wode.png",
+        "selectedIconPath": "assets/tabs/wode-2.png"
+      }
+    ]
+  }
+}

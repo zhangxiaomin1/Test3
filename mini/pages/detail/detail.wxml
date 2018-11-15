@@ -1,0 +1,49 @@
+<!--pages/detail/detail.wxml-->
+<!--书名-->
+<view class="title-style">
+  <text>{{book.title}}</text>
+</view>
+<!--图片-->
+ <view class="slider" >
+   <image src="{{book.pic}}" mode="aspectFill" lazy-load/>
+ </view>
+ <!--选项卡 详情 选集-->
+ <!--作品简介-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+    详情
+  </view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+    选集
+  </view>
+</view> 
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+    <view class="jianjie">
+      <text class="text-1">作品简介</text>
+      <text class="text-2">{{book.jianjie}}</text>
+      <view class="renqi">
+        <text>人气值{{book.zan}}亿</text>
+        <text>总评论{{book.pinglun}}万</text>
+        <text>1829万人已关注</text>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="xuanji" wx:for="{{detail}}" wx:key="{{id}}">
+      <view class="tupian">
+        <image src="{{item.pic}}" mode="aspectFill" lazy-load/>
+      </view>
+      <view class="timu">
+        <text class="dian">{{item.title}}</text>
+        <text class="top-1">{{item.shijian}}</text>
+          <view class="zan">
+            <image src="/assets/index/zan.png" />
+            <text>{{item.zan}}万</text>
+          </view>
+      </view>
+    </view>
+    <!--加载更多-->
+    <view class="loadmore loading">正在加载...</view>
+  </swiper-item>
+</swiper>

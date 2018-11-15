@@ -1,0 +1,29 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:200rpx;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.container{
+  background-color: #F4EA2A;
+}
+/*列表*/
+.cell{
+  background-color:#fff;
+  font-size:16px;
+}
+.cell-item{
+  border-bottom:1rpx solid #ddd;
+  padding:20rpx 30rpx;
+}
